@@ -4,7 +4,7 @@ import { router } from './routes';
 const swaggerFile = require("./swagger.json"); //import não funcionava por nada
 
 import "./database";
-
+//Teste commit
 const app = express();
 
 app.use(express.json());
