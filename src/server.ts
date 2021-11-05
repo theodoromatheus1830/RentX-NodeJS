@@ -1,10 +1,10 @@
 import express from 'express';
 import swaggerUI from "swagger-ui-express";
-import { router } from './routes';
-const swaggerFile = require("./swagger.json"); //import não funcionava por nada
 
 import "./database";
-//Teste commit
+import { router } from './routes';
+const swaggerFile = require("./swagger.json");
+
 const app = express();
 
 app.use(express.json());
