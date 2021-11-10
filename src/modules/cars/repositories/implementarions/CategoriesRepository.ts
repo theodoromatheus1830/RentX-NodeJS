@@ -12,7 +12,7 @@ class CategoriesRepository implements ICategoriesRepository{
     }
 
     async create({ description, name} : ICreateCategoryDTO): Promise<void>{
-
+        console.log(description);
         const category = this.repository.create({
             description,
             name,
