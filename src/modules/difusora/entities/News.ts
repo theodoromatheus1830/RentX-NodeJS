@@ -1,16 +1,19 @@
 import { v4 as uuidv4} from 'uuid';
 import { Column, CreateDateColumn, Entity, PrimaryColumn } from "typeorm";
 
-@Entity("categories")
-class Category{
+@Entity("news")
+class News{
     @PrimaryColumn()
     id?: string;
 
     @Column()
-    name: string;
+    title: string;
 
     @Column()
-    description: string;
+    text: string;
+
+    @Column()
+    image: string;
     
     @CreateDateColumn()
     created_at: Date;
@@ -22,4 +25,4 @@ class Category{
     }
 }
 
-export { Category };
+export { News };

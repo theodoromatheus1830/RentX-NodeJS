@@ -1,18 +1,18 @@
 import { container } from "tsyringe";
-import { ICategoriesRepository } from "../../modules/cars/repositories/ICategoriesRepository";
-import { CategoriesRepository } from "../../modules/cars/repositories/implementarions/CategoriesRepository";
-import { SpecificationsRespository } from "../../modules/cars/repositories/implementarions/SpecificationsRepository";
-import { ISpecificationRepository } from "../../modules/cars/repositories/ISpecificationsRepository";
+import { ICitiesRepository } from "../../modules/difusora/repositories/ICitiesRepository";
+import { CitiesRepository } from "../../modules/difusora/repositories/implementarions/CitiesRepository";
+import { NewsRepository } from "../../modules/difusora/repositories/implementarions/NewsRepository";
+import { INewsRepository } from "../../modules/difusora/repositories/INewsRepository";
 
 
-// ICategoriesRepository
-container.registerSingleton<ICategoriesRepository>(
-    "CategoriesRepository",
-    CategoriesRepository
+// INewsRepository
+container.registerSingleton<INewsRepository>(
+    "NewsRepository",
+    NewsRepository
 );
 
-// ISpecificationsRepository
-container.registerSingleton<ISpecificationRepository>(
-    "SpecificationRepository",
-    SpecificationsRespository
+// INewsRepository
+container.registerSingleton<ICitiesRepository>(
+    "CitiesRepository",
+    CitiesRepository
 );
