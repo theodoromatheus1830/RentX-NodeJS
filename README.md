@@ -1,5 +1,8 @@
 # RentX-NodeJS
 
+## Description
+
+Project carried out with the RocketSeat Ignite course. Developed a Rest API for car rental.
 
 ## Requirements
 -npm
