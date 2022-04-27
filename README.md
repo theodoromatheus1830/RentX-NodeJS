@@ -1,11 +1,15 @@
 # RentX-NodeJS
 
 
-##Requirements
+## Requirements
 -npm
+
 -yarn
+
 -docker-compose
 
-##Installing
+## Installing
+
 -run 'docker-compose up -d'
+
 -run 'yarn typeorm migration:run'
